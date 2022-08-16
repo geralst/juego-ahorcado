@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+:root {
+    --color01: #f9bc2c;
+    --color02: #30c5d2;
+    --color03: #9D5353;
+    --color04: #471069;
+    --color05: #adfda2;
+    --color06: #d9d9d9;
+    --color07: #00626d;
+    --color08: #0097a7;
+    --color09: #000000;
+    --color10: #FFFFFF;
+    --color11: #cff4fc;
+    --color12: #055160;
+    --color13: #f8d7da;
+    --color14: #842029;
+  
+    font-family: 'Uchen', serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: linear-gradient(to right, var(--color02), var(--color04));
+  }
+  
+  .instrucciones {
+    text-align:center; 
+    margin: 3rem 0 0;
+  }
+  
+  .titulo {
+    color: var(--color05);
+    padding: 1.5rem;
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .titulo span {
+    font-size: 3.2rem;
+    color: var(--color01);
+  }
+  
+  .subtitulo {
+    color: var(--color10);
+    padding: 1.5rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .parrafo {
+    color: var(--color10);
+    padding: .5rem;  
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .btn {
+    border: 0;
+    color: var(--color10);
+    font-weight: bold;
+    background-color: var(--color07);
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;  
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: var(--color08);
+  }
+  
+  .btn:disabled {
+    background-color: var(--color06);
+    cursor:not-allowed;
+  }
+
+  .btn:last-child {
+    margin-right: 0;
+  }
+  
+  #btn-reiniciar,
+  #btn-inicio {
+    margin-top: 1rem;
+  }
+  
+  .text-input {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .text-input {
+      width: 30%;
+    }
+  }
+  
+  #canvas {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid var(--color06);
+  }
+  
+  .input-oculto {
+    display: block;
+    width: 0;
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  .mensaje-exito {
+    background-color: var(--color11);    
+    padding: 1rem;    
+    font-size: 1.3rem;    
+    margin: 1rem auto 0;
+    color: var(--color12);   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 0.5rem;
+    width: 50%;
+  }
+  
+  .mensaje-error {
+    background-color: var(--color13);    
+    padding: 1rem;    
+    font-size: 1.3rem;    
+    margin: 1rem auto 0;
+    color: var(--color14);   
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bold;    
+    border-radius: 0.5rem;
+    width: 50%;
+  }
+  
+  .footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--color10);
+  }
+  
+  .footer p {  
+    font-style: oblique;
+  }
